@@ -1,0 +1,227 @@
+
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #fff9f7;
+    color: #543b42;
+    line-height: 1.8;
+}
+
+/* شريط التنقل */
+.navbar {
+    background-color: #f7dce3;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #a34e6a;
+    font-size: 23px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #543b42;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #b85c7a;
+}
+
+/* القسم الرئيسي */
+.hero {
+    background: linear-gradient(135deg, #fbe3e9, #fff5e9);
+    min-height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h2 {
+    color: #a34e6a;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/* الأزرار */
+.btn {
+    display: inline-block;
+    background-color: #b85c7a;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #93435f;
+    transform: translateY(-3px);
+}
+
+/* من نحن */
+.about {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.about h2,
+.home-services h2 {
+    color: #a34e6a;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* الخدمات */
+.home-services {
+    background-color: #fff0f2;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(100, 50, 70, 0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    color: #b85c7a;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* تذييل الموقع */
+footer {
+    background-color: #543b42;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* تصميم مناسب للجوال */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .home-services {
+        padding: 45px 6%;
+    }
+}
+
+/* صور صفحة الخدمات */
+.service-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* صفحة التواصل */
+.contact-section {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #fff0f2;
+}
+
+.contact-section h2 {
+    color: #a34e6a;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 40px 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(100, 50, 70, 0.1);
+}
+
+.contact-card h3 {
+    color: #b85c7a;
+    margin: 20px 0 10px;
+}
+
+.contact-card p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.contact-card .btn {
+    margin-top: 25px;
+}
+
+.demo-note {
+    font-size: 14px !important;
+    color: #876f76;
+}
